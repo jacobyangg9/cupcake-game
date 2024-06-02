@@ -1,0 +1,225 @@
+body {
+    background-color: hsl(2, 100%, 95%);
+    font-family:fantasy;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: white;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container {
+    border: 10px solid white;
+    text-align: center;
+    border-radius: 20px;
+    background-color: hsl(2, 100%, 85%);
+    margin: 30px;
+    padding: 20px;
+}
+
+.feed-container {
+    position: absolute;
+    top: 6%;
+    bottom: 9%;
+    left: 5%; /* Adjust the distance from the left edge */
+    margin: 30px;
+    padding: 10px;
+    width: 15%;
+    height: 55%;
+    border: 4px solid white;
+    border-radius: 10px;
+    background-color: hsl(38, 100%, 85%);
+
+}
+
+.menu-container {
+    position: absolute;
+    top: 6%;
+    margin-bottom: 12%;
+    right: 5%; /* Adjust the distance from the right edge */
+    margin: 30px;
+    padding: 10px;
+    width: 15%;
+    height: 55%;
+    border: 4px solid white;
+    border-radius: 10px;
+    background-color: hsl(38, 100%, 85%);
+}
+
+
+.buttons {
+    background-color: hsl(38, 100%, 85%);
+    font-weight: bold;
+    color: hsl(0, 0%, 15%);
+    font-family: sans-serif;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: hsl(38, 100%, 70%);
+    font-weight: bold;
+    color: hsl(0, 0%, 15%);
+    font-family: sans-serif;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.input {
+    background-color: hsl(38, 100%, 88%);
+    color: hsl(0, 0%, 15%);
+    font-family: sans-serif;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: none;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    cursor: text;
+    text-indent: 5px; /* Adjust this value to shift the placeholder */
+
+}
+
+.button-container {
+    text-align: center;
+}
+
+
+#playDefaultCupcakeImg {/* Hide cupcake on game start */
+    visibility: hidden;
+    display: inline-block;
+}
+
+.button-container {/* Hide control buttons on game start */
+    visibility: hidden;
+
+}
+
+#buyDefaultCupcakeBtn {
+    padding: 10px;
+    width: 400px;
+    height: 160px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+}
+
+#plainCupcakeInfo { /* Small text inside purchase button for default cupcake */
+    font-style: italic;
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.cupcake-container {
+    text-align: center;
+}
+
+.sellDisplayBargains {
+    font-size: 16px;
+}
+
+
+/* Customize the topping buttons to fit nicely */
+#sprinklesButton {
+    width: 170px;
+    margin-top: 20px;
+    margin-right: 10px;
+    visibility: hidden;
+}
+
+#oreosButton {
+    width: 170px;
+    margin-top: 20px;
+    margin-right: 10px;
+    visibility: hidden;
+}
+
+#chocolateButton {
+    width: 170px;
+    margin-top: 20px;
+    margin-right: 10px;
+    visibility: hidden;
+}
+
+#cherryButton {
+    width: 170px;
+    margin-top: 20px;
+    margin-right: 10px;
+    visibility: hidden;
+}
+
+/* Customize toppings on cupcake, use pixels for movement */
+#sprinklesCupcakeImg {
+    visibility: hidden;
+    position: absolute;
+    top: 460px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -155%);
+}
+
+#oreosCupcakeImg {
+    visibility: hidden;
+    position: absolute;
+    top: 530px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -250%);
+}
+
+#chocolateChipsCupcakeImg {
+    visibility: hidden;
+    position: absolute;
+    top: 390px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -170%);
+}
+
+#cherryCupcakeImg {
+    visibility: hidden;
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -340%);
+}
+
+#displayTotalCashAtCenter {
+    font-size: 25px;
+    text-align: center;
+    transform: translate(0%, -170%);
+}
+
+#displayCountdownTimer {
+    font-size: 25px;
+    text-align: center;
+    transform: translate(0%, -170%);
+}
+
+.buttonHR {
+    height: 0.5px;
+    color: gray;
+}

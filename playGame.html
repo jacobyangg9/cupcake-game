@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play! | Cupcake Game</title>
+    <link rel="stylesheet" href="playGame.css">
+
+    <link rel="icon" href="/defaultCupCakeImg.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="feed-container">
+
+            <h2>Bargains</h2>
+            <p id="bargain1" class="bargains">Items you purchased will show up here</p>
+            <p id="bargain2" class="bargains" style="color: hsl(38, 100%, 85%);">test</p>
+            <p id="bargain3" class="bargains" style="color: hsl(38, 100%, 85%);">test</p>
+            <p id="bargain4" class="bargains" style="color: hsl(38, 100%, 85%);">test</p>
+            <p id="bargain5" class="bargains" style="color: hsl(38, 100%, 85%);">test</p>
+
+            <hr>
+
+            <p id="displayReceipt" class="sellDisplayBargains">Cost: nothing bought</p>
+            <p id="displayProfit" class="sellDisplayBargains">Profit: $0</p>
+            <p id="displayTotalCash" class="sellDisplayBargains">Total Cash: $1</p>
+        </div>
+        
+        <div class="menu-container">
+            <h2>Toppings</h2>
+            
+            <div class="menu-sprinkles">
+                <p>Sprinkles - $1</p>
+                <img src="sprinklesCupCakeImg.png" alt="Sprinkles" width="60" height="30">
+            </div>
+            
+            <div class="menu-oreos">
+                <p>Oreos - $5</p>
+                <img src="oreosCupcakeImg.png" alt="Oreos" width="30" height="30">
+            </div>
+
+            <div class="menu-chocolate">
+                <p>Chocolate - $15</p>
+                <img src="chocolateChipsCupcakeImg.png" alt="Chocolate Chips" width="30" height="30">
+            </div>
+
+            <div class="menu-cherry">
+                <p>Cherry - $50</p>
+                <img src="cherryCupcakeImg.png" alt="Cherry" width="30" height="30">
+            </div>
+        </div>
+
+        <div class="cupcake-container">
+            <h1 id="headingText">The Cupcake Game --- LIVE!</h1>
+            <button class="buttons" id="buyDefaultCupcakeBtn">
+                Purchase Plain Cupcake? - $1 <br> <hr class="buttonHR"> <span id="plainCupcakeInfo">You must purchase a plain cupcake to buy toppings and sell to customers <br> Click here to purchase!</span>
+            </button>
+
+            <div>
+                <img src="defaultCupCakeImg.png" alt="Default Cupcake Image" width="400" height="400" id="playDefaultCupcakeImg">
+                <img src="sprinklesCupCakeImg.png" alt="Sprinkles" width="200" height="150" id="sprinklesCupcakeImg">
+                <img src="oreosCupcakeImg.png" alt="Oreos" width="100" height="100" id="oreosCupcakeImg">
+                <img src="chocolateChipsCupcakeImg.png" alt="Chocolate Chips" width="100" height="100" id="chocolateChipsCupcakeImg">
+                <img src="cherryCupcakeImg.png" alt="Cherry" width="100" height="100" id="cherryCupcakeImg">
+            </div>
+
+            <p id="displayTotalCashAtCenter">Total Cash: $1</p>
+            <p id="displayCountdownTimer">Time left - 1:00</p>
+        </div>
+
+        <div class="button-container">
+            <label for="sellPriceCupcake">Sell cupcake for $</label>
+            <input type="number" id="cupcakePriceInput" placeholder="Price" class="input">
+            <button class="buttons" id="sellButton">Sell Cupcake</button>
+        </div>
+
+        <div class="topping-buttons">
+            <button class="buttons" id="sprinklesButton">Sprinkles - $1</button>
+            <button class="buttons" id="oreosButton">Oreos - $5</button>
+            <button class="buttons" id="chocolateButton">Chocolate - $15</button>
+            <button class="buttons" id="cherryButton">Cherry - $50</button>
+        </div>
+    </div>
+    
+    <script src="playGame.js" type="module"></script>
+</body>
+</html>
